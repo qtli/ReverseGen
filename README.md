@@ -4,4 +4,4 @@ We propose a new paradigm for generating effective synthetic data from the "fail
 This approach effectively investigates the target model's weaknesses without the need for human annotation, transforming the task of exploring effective training data tailored to specific models and tasks into a trainable framework centered around failure-inducing exploration. 
 We comprehensively evaluate ReverseGen in scenarios such as safety red-teaming, honesty calibration, and mathematical reasoning. Experimental results indicate that ReverseGen can identify a wide range of test samples where target models may fail.
 
-<img src="./reversegen.png" width="1000px"></img>
+<img src="./reversegen.png" width="900px"></img>

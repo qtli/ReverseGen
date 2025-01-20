@@ -12,9 +12,14 @@ We comprehensively evaluate ReverseGen in scenarios such as safety red-teaming, 
 ## 🔗 Quick Links
 - [ReverseGen](#failure-inducing-data-synthesis)
   - [Quickstart](#quickstart)
-  - [Training scripts](#training-scripts)
+  - [Training scripts](#iterative-failure-inducing-training)
+    - [Data](#data)
+    - [Step 1: Proposer Model Initialization](#step-1-proposer-model-initialization)
+    - [Step 2: Obtaining Target Model Feedback](#step-2-obtaining-target-model-feedback)
+    - [Step 3: Proposer Model Optimization](#step-3-proposer-model-optimization)
+    - [Step 4: Target Model Enhancement with Proposer-generated Instructions](#step-4-target-model-enhancement-with-proposer-generated-instructions)
   - [Evaluation](#evaluation)
-  - [Bugs or Questions?](#bugs-or-questions)
+  - [Acknowledge](#acknowledge)
   - [Citation](#citation)
 
 ## Quickstart
@@ -257,7 +262,7 @@ After several iterations, we generate instructions using the latest version of t
 bash train.sh /path/OpenLLaMA-3B improve openllama_3b_as_safety_proposer_llamachat7b_as_target_improve [TRAIN_FILE] [TEST_FILE]
 ```
 
-### Step 5: Evaluation
+## Evaluation
 - Use the scripts in Step 2.2 to collect responses from the fine-tuned target model.
 - Use the script in Step 2.3 to evaluate the performance of the generated responses across different metrics (e.g., ASR, Self-Bleu, Accuracy, etc.).
 
@@ -277,9 +282,4 @@ Please cite our paper if you find the repo helpful in your work:
   year={2024}
 }
 ```
-=======
-<img src="./reversegen.png" width="900px"></img>
->>>>>>> bd498834aefb470e252c61200194598c81db958e
-=======
-<img src="./reversegen.png" width="900px"></img>
->>>>>>> bd498834aefb470e252c61200194598c81db958e
+

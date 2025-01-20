@@ -1,0 +1,7 @@
+defaults:
+  - base_model
+
+name_or_path: ckpt/Llama-2-7b-hf
+block_name: LlamaDecoderLayer
+#use_flash_attention: true
+use_flash_attention: false

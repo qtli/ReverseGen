@@ -1,0 +1,7 @@
+defaults:
+  - base_model
+
+name_or_path: ckpt/open_llama_3b
+block_name: LlamaDecoderLayer
+#use_flash_attention: true
+use_flash_attention: false

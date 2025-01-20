@@ -1,0 +1,11 @@
+defaults:
+  - base_loss
+
+# Supervised Finetuning
+name: sft
+
+trainer: SFTTrainer
+
+dataloader: SFTDataLoader
+
+use_reference_model: false

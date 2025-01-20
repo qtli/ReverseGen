@@ -1,0 +1,7 @@
+defaults:
+  - base_model
+
+name_or_path: ckpt/Meta-Llama-3.1-8B-Instruct
+block_name: LlamaDecoderLayer
+#use_flash_attention: true
+use_flash_attention: false
